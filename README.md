@@ -151,3 +151,10 @@ By default, hCaptcha is skipped in "test" and "cucumber" env. To enable it durin
 ```ruby
 Hcaptcha.configuration.skip_verify_env.delete("test")
 ```
+
+## Themes
+
+By default, this plugin uses the dark theme for the hCaptcha widget. To change the theme used for rendering, you can use the following code:
+
+```ruby
+hcaptcha_tags(data-theme: "light")
